@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Zoom text</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <h1>Text</h1>
+    </div>
+    <input type="number" name="" id="number" min="10" max="150">
+
+    <script>
+        const Number = document.getElementById('number');
+        const heading = document.querySelector('h1');
+        heading.style.fontSize = Number.value + 'px';
+
+
+        Number.addEventListener("input", () => {
+            heading.style.fontSize = Number.value + 'px';
+        })
+    </script>
+</body>
+
+</html>
